@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicRq.Domain", "..\Domain\MicRq.Domain\MicRq.Domain.csproj", "{5F43947D-2B2C-4D40-A2B9-0F1585B5E9F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicRq.Infra.Bus", "..\Infra\MicRq.Infra.Bus\MicRq.Infra.Bus.csproj", "{1586209D-5A2E-4B88-8EB2-3160539B397D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicRq.Infra.Bus", "..\Infra\MicRq.Infra.Bus\MicRq.Infra.Bus.csproj", "{1586209D-5A2E-4B88-8EB2-3160539B397D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micrq.Infra.IoC", "..\Infra\Micrq.Infra.IoC\Micrq.Infra.IoC.csproj", "{7E3BC563-5ECF-4305-A03D-3673E52304CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{1586209D-5A2E-4B88-8EB2-3160539B397D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1586209D-5A2E-4B88-8EB2-3160539B397D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1586209D-5A2E-4B88-8EB2-3160539B397D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3BC563-5ECF-4305-A03D-3673E52304CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3BC563-5ECF-4305-A03D-3673E52304CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3BC563-5ECF-4305-A03D-3673E52304CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3BC563-5ECF-4305-A03D-3673E52304CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5F43947D-2B2C-4D40-A2B9-0F1585B5E9F6} = {4322075E-A61A-4B08-8528-134456F31734}
 		{1586209D-5A2E-4B88-8EB2-3160539B397D} = {514A82C4-21EB-4EB2-8532-DBE7663EE86D}
+		{7E3BC563-5ECF-4305-A03D-3673E52304CA} = {7740601C-E79F-4BBC-8BC9-09B56E178633}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {241F5CA7-C355-4F12-8534-75D93B9FF3EB}
