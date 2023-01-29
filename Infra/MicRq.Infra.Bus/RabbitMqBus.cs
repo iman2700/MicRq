@@ -85,7 +85,7 @@ namespace MicRq.Infra.Bus
         private async Task Consumer_Resive(object sender, BasicDeliverEventArgs e)
         {
             var eventName = e.RoutingKey;
-            var message = Encoding.UTF8.GetString(e.Body);
+            var message = Encoding.UTF8.GetString(e.Body.Span);
             try
             {
                 await ProcessorEvent(eventName, message).ConfigureAwait(false);
