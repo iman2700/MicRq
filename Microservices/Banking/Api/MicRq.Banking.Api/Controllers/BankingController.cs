@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MicRq.Banking.Application.Interface;
+using MicRq.Banking.Application.Models;
 using MicRq.Banking.Domain.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -33,8 +34,10 @@ namespace MicRq.Banking.Api.Controllers
 
         // POST api/<BankingController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] AccountTransfer accountTransfer)
         {
+            _accountServices.Transfer(accountTransfer);
+            return Ok(accountTransfer);
         }
 
         // PUT api/<BankingController>/5

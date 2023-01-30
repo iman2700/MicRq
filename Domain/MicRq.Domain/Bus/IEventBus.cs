@@ -10,7 +10,7 @@ namespace MicRq.Domain.Bus
 {
     public interface IEventBus
     {
-        Task SecndCommand<T>(T command) where T : Command;
+        Task SendCommand<T>(T command) where T : Command;
         void Publish<T>(T @event) where T : Events;
         void Subscribe<T, TH>() where T : Events where TH : IEventHandler<T>;
     }

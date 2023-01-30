@@ -1,4 +1,5 @@
-﻿using MicRq.Banking.Domain.Models;
+﻿using MicRq.Banking.Application.Models;
+using MicRq.Banking.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace MicRq.Banking.Application.Interface
     public interface IAccountServices
     {
         IEnumerable<Account> GetAccounts();
+        void Transfer(AccountTransfer accountTransfer);
     }
 }

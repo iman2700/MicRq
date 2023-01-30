@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\ClassLibrary1MicRq.Banking.Domain\MicRq.Banking.Domain.csproj" />
+    <ProjectReference Include="..\..\Domain\MicRq.Banking.Domain\MicRq.Banking.Domain.csproj" />
   </ItemGroup>
 
 </Project>
